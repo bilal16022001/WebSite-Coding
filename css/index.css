@@ -1,0 +1,134 @@
+
+/*----start header----*/
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: #0d6efd !important;
+}
+.navbar-light .navbar-nav .nav-link {
+    position: relative;
+}
+.navbar-light .navbar-nav .nav-link:before{
+     position:absolute;
+     content:"";
+     left:0;
+     bottom:0;
+     width:0%;
+     height:3px;
+     background-color:#0d6efd;
+     transition:all .3s;
+}
+.navbar-light .navbar-nav .nav-link:hover:before{
+    width:100%;
+}
+/*-----end header----*/
+
+/*-----start main----*/
+.img{
+    background:url("/img/slider02.jpg") center center/cover;
+    height:80vh;
+    position: relative;
+}
+.img:before{
+    position:absolute;
+    content:"";
+    inset:0;
+    background-color:rgba(255,255,255,0.7);
+}
+.book svg,.icon svg {
+    width:30px;
+    height:30px;
+}
+.about{
+    background-color:#f6f9fe;
+    padding:30px;
+}
+.progressSkil{
+    margin-bottom:50px;
+}
+.counter{
+    margin-bottom:60px;
+}
+.counter .p{
+    display:flex;
+    justify-content:center;
+}
+.counter .row > div{
+    background-color:#f6f9fe !important;
+    width:200px;
+}
+.icon svg{
+    color:#fff !important;
+}
+.clients img{
+    width:150px;
+    height:150px;
+}
+.services .icn svg{
+    width:60px;
+    height:60px;
+}
+.services .icn .card-overlay{
+    inset:0;
+    z-index: -1;
+    transition: .3s;
+}
+.services .icn:hover{
+    color:#fff;
+}
+.services .icn:hover .card-overlay{
+    top:0 !important;
+}
+.sldr{
+    background:url("../img/featured_work-7.jpg") center center/cover;
+}
+.sldr::before{
+    position:absolute;
+    content:"";
+    inset:0;
+    background-color:rgba(0,0,0,0.7);
+}
+.sldr img{
+    width:150px;
+    height:150px;
+}
+.sldr .carousel-caption{
+    position:static;
+}
+
+/*----end main----*/
+
+/*----start footer----*/
+footer{
+    background-color:#f6f9fe;
+    margin-top:40px;
+}
+footer .contentF i{
+    background-color:#0d6efd;
+    color:#fff;
+    padding:10px;
+    border-radius:50%;
+    position: relative;
+}
+footer .cont ul li{
+    position:relative;
+}
+footer .cont ul li::before{
+    position:absolute;
+    content:"";
+    border:5px solid transparent;
+    border-left-color:red;
+    left:-10px;
+    top:8px;
+}
+@media (max-width:768px){
+    footer{
+        text-align:center;
+    }
+    footer .cont ul li::before {
+        left:37%;
+}
+}
+/*----end footer----*/
+
+/*-----start copyright----*/
+
+/*-----end copyright----*/
